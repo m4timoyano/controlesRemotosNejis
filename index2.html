@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/svg+xml" href="recursos/calculator-fill.svg" sizes="any"> 
+    <title>Controles Remotos</title>
+</head>
+<body class="container-fluid"> 
+  <header>
+
+<!-- Encabezado y links -->      
+
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index2.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img id="logo" src="recursos/logo-EN.jpg" alt="EN"><h1 class="h1 m-5 mt-0 mb-0">Controles Remotos</h1>
+          </a>
+          <a href="inventario.html" class="nav-link text-white col-12 col-lg-auto my-2 justify-content-center my-md-0">
+            <button type="button" class="btn btn-secondary">Inventario
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!-- Buscador y filtros -->
+    
+    <nav class="navbar navbar-nav row sticky-lg-top navbar-light bg-light">
+        <form class="nav-item d-flex col">
+          <input class="form-control me-2" type="search" placeholder="Buscar código..." aria-label="Buscar">
+          <button class="btn btn-outline-primary" type="submit">Buscar</button>
+        </form>
+        <div class="nav-item btn-group col-lg-3 me-2 m-md-1 m-sm-1 col" role="group" aria-label="First group">  
+          <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Código
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">2462</a></li>
+                  <li><a class="dropdown-item" href="#">2727</a></li>
+                  <li><a class="dropdown-item" href="#">3130</a></li>
+                  <li><a class="dropdown-item" href="#">DVD243</a></li>
+              </ul>
+          </div>
+          
+          <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Tipo
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">LED</a></li>
+                  <li><a class="dropdown-item" href="#">Smart</a></li>
+                  <li><a class="dropdown-item" href="#">Tubo</a></li>
+                  <li><a class="dropdown-item" href="#">DVD</a></li>
+              </ul>
+          </div>
+
+          <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              TV's
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">Hitachi</a></li>
+                  <li><a class="dropdown-item" href="#">Philco</a></li>
+                  <li><a class="dropdown-item" href="#">BGA</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="nav-item btn-group m-md-1 m-sm-1 col" role="group" aria-label="Second group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Imagen</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Lista</label>
+        </div>
+
+        <div class="nav-item btn-group m-md-1 m-sm-1 col" role="group" aria-label="Third group">    
+          <button type="button" class="btn btn-outline-danger">Faltantes<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"><span class="visually-hidden">New alerts</span>
+          </span>
+          </button>
+        </div>
+    </nav>
+  </header>
+
+<!-- Empieza listado -->
+
+  <main class="main">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2462</h5>
+              <p class="card-text">TV Panasonic</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV57</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2727</h5>
+              <p class="card-text">TV Durabrand</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV87</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">3130</h5>
+              <p class="card-text">TV Telefunken 29 / G. Electric / BGH</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV139</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">DVD243</h5>
+              <p class="card-text">DVD Stromberg</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: 2925</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2462</h5>
+              <p class="card-text">TV Panasonic</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV57</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2727</h5>
+              <p class="card-text">TV Durabrand</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV87</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">3130</h5>
+              <p class="card-text">TV Telefunken 29 / G. Electric / BGH</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV139</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">DVD243</h5>
+              <p class="card-text">DVD Stromberg</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: 2925</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2462</h5>
+              <p class="card-text">TV Panasonic</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV57</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">2727</h5>
+              <p class="card-text">TV Durabrand</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV87</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">3130</h5>
+              <p class="card-text">TV Telefunken 29 / G. Electric / BGH</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: TV139</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card m-3 h-100">
+            <img src="recursos/control-ejemplo.jpg" class="card-img-top" alt="control">
+            <div class="card-body">
+              <h5 class="card-title">DVD243</h5>
+              <p class="card-text">DVD Stromberg</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Referencia: 2925</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/funciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
